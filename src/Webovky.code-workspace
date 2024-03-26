@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"npm.enableRunFromFolder": true,
+		"npm.enableTouchbar": true
+	}
+}

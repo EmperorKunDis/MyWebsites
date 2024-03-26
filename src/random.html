@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image Display</title>
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <img id="randomImage" src="path_to_default_image.jpg" alt="Random Image">
+    <script>
+        function getRandomImage() {
+            const imageFolder = "path_to_image_folder";
+            const imageCount = 40;
+            const randomImageIndex = Math.floor(Math.random() * imageCount) + 1;
+            const randomImagePath = `${imageFolder}/image${randomImageIndex}.jpg`;
+            document.getElementById('randomImage').src = randomImagePath;
+        }
+
+        setInterval(getRandomImage, 5000); // Každých 5 sekund se změní obrázek
+    </script>
+</body>
+</html>
