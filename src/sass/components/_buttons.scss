@@ -82,6 +82,67 @@
   }
 }
 
+/* Projects Style */
+.cta-btn--projects {
+  @include supportColorForIE11();
+  border-width: 2px;
+  border-style: solid;
+  -moz-border-image: -moz-linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $third-color 100%
+  );
+  -webkit-border-image: -webkit-linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $third-color 100%
+  );
+  border-image: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $third-color 100%
+  );
+  -webkit-border-image-slice: 1;
+  border-image-slice: 1;
+  @include supportIE11() {
+    color: $third-color !important;
+    &:hover {
+      color: $white-color !important;
+    }
+  }
+
+  @include respond(phone) {
+    background-image: none;
+    border: 2px solid $secondary-color;
+    -webkit-text-fill-color: $secondary-color;
+  }
+
+  &::after {
+    background-image: linear-gradient(
+      135deg,
+      $third-color 0%,
+      $fourth-color 100%
+    );
+
+    @include respond(phone) {
+      background-image: black;
+    }
+  }
+
+  &:hover {
+    -webkit-text-fill-color: $black-color;
+    text-decoration: none;
+
+    @include respond(phone) {
+      -webkit-text-fill-color: $dark-grey;
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
 /* Resume Style */
 .cta-btn--resume {
   color: $black-color;
