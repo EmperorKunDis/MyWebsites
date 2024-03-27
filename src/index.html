@@ -110,6 +110,20 @@
           </ul>
           <ul class="navbar-nav d-flex flex-row">
             <div class="social-links">
+              <!-- Top Navigation Menu -->
+                <div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+                  </div>
               <li class="nav-item me-3 me-lg-0">
                 <a rel="noreferrer" href="https://www.youtube.com/@martinsvanda5874" target="_blank">
                   <i class="fa fa-youtube fa-inverse"></i>
@@ -398,16 +412,18 @@
         x[myIndex-1].style.display = "block";  
         setTimeout(carousel, 4500);    
       }
+
       </script>
       <script>
+      /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
         function myFunction() {
-          var x = document.getElementById("Demo");
-          if (x.className.indexOf("w3-show") == -1) { 
-            x.className += " w3-show";
-          } else {
-            x.className = x.className.replace(" w3-show", "");
-          }
-        }
+          var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          } 
         </script>
   </body>
 </html>
