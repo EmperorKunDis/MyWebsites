@@ -27,3 +27,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: $primary-color;
 }
+a {
+  color: $fourth-color;
+
+  &:hover {
+    color: $third-color;
+  }
+}

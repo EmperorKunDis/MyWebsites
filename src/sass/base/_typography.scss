@@ -40,7 +40,7 @@ a:hover {
 
 .text-color-main {
   @include supportIE11() {
-    color: $dark-grey !important;
+    color: $primary-color !important;
   }
     &:hover {
       color: $black-color !important;

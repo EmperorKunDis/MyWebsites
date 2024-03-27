@@ -27,7 +27,7 @@
       href="w3.css">
 
     <!-- Todo: put here your site title -->
-    <title>Martin KunDis Svanda | Software / Game Developer</title>
+    <title>Martin KunDis Svanda | Software Developer / Game Developer</title>
     <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
     <meta 
       name="keywords" 
@@ -77,9 +77,9 @@
           aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
-        <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto">
-            <li class="nav-item">
+           <!-- <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
@@ -90,8 +90,8 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contacts</a>
-            </li>
-          </ul>-->
+            </li> -->
+          </ul>
           <ul class="navbar-nav d-flex flex-row">
             <div class="social-links">
               <li class="nav-item me-3 me-lg-0">
@@ -105,18 +105,13 @@
                 </a>
               </li>
               <li class="nav-item me-3 me-lg-0">
-                <a rel="noreferrer" href="https://twitter.com/EmperorKunDis" target="_blank">
-                  <i class="fa fa-twitter fa-inverse"></i>
-                </a>
-              </li>
-              <li class="nav-item me-3 me-lg-0">
                 <a rel="noreferrer" href="https://www.linkedin.com/in/martin-kundis-svanda-b8491a264/" target="_blank">
                   <i class="fa fa-linkedin fa-inverse"></i>
                 </a>
               </li>
               <li class="nav-item me-3 me-lg-0">
-                <a rel="noreferrer" href="https://twitter.com/EmperorKunDis" target="_blank">
-                  <i class="fa-solid fa-memo-circle-info"></i>
+                <a rel="noreferrer" href="assets/docs/resume.pdf" target="_blank">
+                  <i class="fa fa-file-pdf-o fa-inverse"></i>
                 </a>
               </li>
             </div>
@@ -130,26 +125,24 @@
     <div id="top"></div>
 
     <!-- **** Hero Section **** -->
-    <section id="hero" class="jumbotron">
+    <section id="hero">
       <div class="container">
         <h1 class="hero-title load-hidden">
           Hello there, <span class="text-small-main">I'm NOT General Kenoby</span>
           <br />
-          My name is <span class="text-color-main">Martin KunDis Svanda</span>
+          My name is <a rel="noreferrer" href="#about" class="hero-title load-hidden">Martin KunDis Svanda</a>
         </h1>
         <p class="hero-cta load-hidden">
-            <a
-              rel="noreferrer"
-              target="_blank"
-              class="cta-btn cta-btn--resume"
-              href="assets/docs/resume.pdf">
-              ↓↓↓ Highground ↓↓↓</a>
+          <a rel="noreferrer" href="#projects" class="cta-btn cta-btn--resume">
+            ↓↓↓ Highground ↓↓↓
+          </i>
+          </a>
         </p>
       </div>
     </section>
     <!-- /END Hero Section -->
 
-    <!-- **** About Section **** -->
+    <!-- **** About Section  **** -->
     <section id="about">
       <div class="container">
         <h2 class="section-title load-hidden">Would you like to know more?</h2>
@@ -206,7 +199,7 @@
                   class="cta-btn cta-btn--resume"
                   href="assets/docs/resume.pdf"
                 >
-                Im not from Buenos Aires
+                More
                 </a>
               </span>
             </div>
@@ -314,10 +307,23 @@
 
     <!-- **** Contact Section **** -->
     <section id="contact">
-      <div class="container">
+      
         <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <p class="text-small">
+            <sup>
+              <br>Martin KunDis Švanda
+              <br>Software Developer
+              <br>/
+              <br>Game Developer
+              <br>Schillerstraße 12
+              <br>Waldsassen
+              <br>95652
+              <br>Deutschland/Germany
+              <br>martin.k.svanda@gmail.com
+              <br>+49 (0)175 9096965
+          </sup>
+          </p>
+          <div class="container">
           <a
             rel="noreferrer"
             target="_blank"
@@ -325,7 +331,6 @@
             href="mailto:martin.k.svanda@gmail.com"
             >Call to Action</a
           >
-        </div>
       </div>
     </section>
     <!-- /END Contact Section -->
@@ -346,19 +351,16 @@
           <a rel="noreferrer" href="https://www.linkedin.com/in/martin-kundis-svanda-b8491a264/" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="https://twitter.com/EmperorKunDis" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
+          <a rel="noreferrer" href="assets/docs/resume.pdf" target="_blank">
+            <i class="fa fa-file-pdf-o fa-inverse"></i>
           </a>
         </div>
-
-        <hr />
-
         <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
         <p class="footer__text">
           © 2024 - Website developed by 
           <a rel="noreferrer" href="https://github.com/EmperorKunDis" target="_blank"
-            >Martin EmperorKunDis Svanda</a
-          >
+            >Martin EmperorKunDis Svanda</a>
+          <br>Based on work of <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank">Jacobo Martínez</a>
         </p>
       </div>
     </footer>
