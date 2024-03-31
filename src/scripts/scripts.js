@@ -12,7 +12,7 @@
         let languageGerman = document.querySelector("#languageGerman");
         let languageCzech = documen.querySelector("#languageCzech");
 
-        function update() {
+        function updateWeb() {
 
             if (language == "EN") {
                 languageMenu.innerText = "Language";
@@ -61,17 +61,17 @@
    
         function languageUpdateEN() {
             var language = "EN"
-            update();
+            updateWeb();
 
         }
         function languageUpdateDE() {
             var language = "DE"
-            update();
+            updateWeb();
         }
 
         function languageUpdateCZ() {
             var language = "CZ"
-            update();
+            updateWeb();
         }
 
         function toggleDropdown() {
