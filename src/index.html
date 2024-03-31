@@ -66,88 +66,69 @@
     <!-- Navbar -->
     <nav  class="navbar navbar-expand-lg fixed-top navbar-scroll">
       
-        <a  class="navbar-brand" href="#top">Unreal CodEmperor</a>
-        <button 
-          class="navbar-toggler" 
-          type="button" 
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarSupportedContent" 
-          aria-controls="navbarSupportedContent" 
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
+      <a  class="navbar-brand" href="#top">Unreal CodEmperor</a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <div class="dropdown">
+        <button onclick="toggleDropdown()" class="dropbtn">
+          <img class="dropbtn-img" src="./assets/pics/icons/language.png" alt="Dropdown ikonka">
         </button>
-        <div class="social-links">
-            <input type="button" width="30" height="30" src="assets/pics/icons/language.png" class="social-links" onclick="myFunction()" />
-            <li class="nav-item me-3 me-lg-0" onclick="myFunction()">
-              <i src="assets/pics/icons/language.png"></i>
-              <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
-                <a rel="noreferrer" href="index.html" target="_blank">
-                  <i src="assets/pics/icons/eng.png"></i>
-                </a>
-                <a rel="noreferrer" href="indexDe.html" target="_blank">
-                  <i src="assets/pics/icons/de.png"></i>
-                </a>
-                <a rel="noreferrer" href="indexCz.html" target="_blank">
-                  <i src="assets/pics/icons/cz.png"></i>
-                </a>
-              </div>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#"><img class="dropbtn-img" src="./assets/pics/icons/eng.png" alt="Dropdown ikonka"></a>
+          <a href="#"><img class="dropbtn-img" src="./assets/pics/icons/de.png" alt="Dropdown ikonka"></a>
+          <a href="#"><img class="dropbtn-img" src="./assets/pics/icons/cz.png" alt="Dropdown ikonka"></a>
         </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto">
-           <!-- <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+      </div>
+      
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+         <li class="nav-item">
+            <a class="nav-link" href="#">${Home}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacts</a>
+          </li> 
+        </ul>
+            <li class="nav-item me-3 me-lg-0">
+              <a rel="noreferrer" href="https://www.youtube.com/@martinsvanda5874" target="_blank">
+                <i class="fa fa-youtube fa-inverse"></i>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Me</a>
+            <li class="nav-item me-3 me-lg-0">
+              <a rel="noreferrer" href="https://github.com/EmperorKunDis" target="_blank">
+                <i class="fa fa-github fa-inverse"></i>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">My Projects</a>
+            <li class="nav-item me-3 me-lg-0">
+              <a rel="noreferrer" href="https://www.linkedin.com/in/martin-kundis-svanda-b8491a264/" target="_blank">
+                <i class="fa fa-linkedin fa-inverse"></i>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contacts</a>
-            </li> -->
-          </ul>
-          <ul class="navbar-nav d-flex flex-row">
-            <div class="social-links">
-              <!-- Top Navigation Menu -->
-                <div class="topnav">
-  <a href="#home" class="active">Logo</a>
-  <!-- Navigation links (hidden by default) -->
-  <div id="myLinks">
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-  </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-                  </div>
-              <li class="nav-item me-3 me-lg-0">
-                <a rel="noreferrer" href="https://www.youtube.com/@martinsvanda5874" target="_blank">
-                  <i class="fa fa-youtube fa-inverse"></i>
-                </a>
-              </li>
-              <li class="nav-item me-3 me-lg-0">
-                <a rel="noreferrer" href="https://github.com/EmperorKunDis" target="_blank">
-                  <i class="fa fa-github fa-inverse"></i>
-                </a>
-              </li>
-              <li class="nav-item me-3 me-lg-0">
-                <a rel="noreferrer" href="https://www.linkedin.com/in/martin-kundis-svanda-b8491a264/" target="_blank">
-                  <i class="fa fa-linkedin fa-inverse"></i>
-                </a>
-              </li>
-              <li class="nav-item me-3 me-lg-0">
-                <a rel="noreferrer" href="assets/docs/resume.pdf" target="_blank">
-                  <i class="fa fa-file-pdf-o fa-inverse"></i>
-                </a>
-              </li>
-            </div>
-          </ul>
-        </div>
-    </nav>
+            <li class="nav-item me-3 me-lg-0">
+              <a rel="noreferrer" href="assets/docs/resume.pdf" target="_blank">
+                <i class="fa fa-file-pdf-o fa-inverse"></i>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+  </nav>
     <!-- Navbar -->
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
@@ -425,5 +406,26 @@
             }
           } 
         </script>
+        <script>
+        function toggleDropdown() {
+          var dropdown = document.getElementById("myDropdown");
+          dropdown.classList.toggle("show");
+        }
+        
+        // Zavřít dropdown menu po kliknutí mimo něj
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+      </script>
+        
   </body>
 </html>
