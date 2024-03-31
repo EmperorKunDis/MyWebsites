@@ -79,13 +79,13 @@
       </button>
       
       <div class="dropdown">
-        <button onclick="toggleDropdown()" class="dropbtn">
-          <img class="dropbtn-img" src="./assets/pics/icons/language.png" alt="Dropdown ikonka">
+        <button id="languageMenu" onclick="toggleDropdown()" class="dropbtn">
+          Gustav
         </button>
         <div id="myDropdown" class="dropdown-content">
-          <a href="#"><img class="dropbtn-img" src="./assets/pics/icons/eng.png" alt="Dropdown ikonka"></a>
-          <a href="#"><img class="dropbtn-img" src="./assets/pics/icons/de.png" alt="Dropdown ikonka"></a>
-          <a href="#"><img class="dropbtn-img" src="./assets/pics/icons/cz.png" alt="Dropdown ikonka"></a>
+          <button id="languageEnglish" onclick="languageUpdateEN()" >Libor</button>
+          <button id="languageGerman" onclick="languageUpdateDE()">Bozena</button>
+          <button id="languageCzech" onclick="languageUpdateCZ()">Jonatan</button>
         </div>
       </div>
       
@@ -93,16 +93,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto">
          <li class="nav-item">
-            <a class="nav-link" href="#">${Home}</a>
+            <a id="home" class="nav-link" href="#"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Me</a>
+            <a id="aboutme" class="nav-link" href="#"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">My Projects</a>
+            <a id="projects" class="nav-link" href="#"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacts</a>
+            <a id="contact" class="nav-link" href="#"></a>
           </li> 
         </ul>
             <li class="nav-item me-3 me-lg-0">
@@ -378,54 +378,11 @@
     <!-- /END Footer Section -->
 
     <script defer type="module" src="index.js"></script>
+    <script src="./scripts/scripts.js"></script>
     <script>
-      var myIndex = 0;
-      carousel();
       
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}    
-        x[myIndex-1].style.display = "block";  
-        setTimeout(carousel, 4500);    
-      }
-
       </script>
-      <script>
-      /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-        function myFunction() {
-          var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-              x.style.display = "none";
-            } else {
-              x.style.display = "block";
-            }
-          } 
-        </script>
-        <script>
-        function toggleDropdown() {
-          var dropdown = document.getElementById("myDropdown");
-          dropdown.classList.toggle("show");
-        }
-        
-        // Zavřít dropdown menu po kliknutí mimo něj
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
-            }
-          }
-        }
-      </script>
+      
         
   </body>
 </html>

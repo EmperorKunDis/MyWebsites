@@ -1,6 +1,6 @@
 .dropbtn {
-    background-color: #000;
-    color: #000;
+    background-color: transparent;
+    color: $primary-color;
     padding: 8px;
     font-size: 16px;
     border: none;
@@ -16,7 +16,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #000;
+    background-color: transparent;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -24,14 +24,14 @@
   
   /* Styl pro odkazy uvnitř dropdown obsahu */
   .dropdown-content a {
-    color: #000;
+    color: $primary-color;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
   /* Styl pro odkazy po najetí myši */
-  .dropdown-content a:hover {background-color: #000;}
+  .dropdown-content a:hover {background-color: transparent;}
   
   /* Zobrazení dropdown obsahu */
   .show {display:block;}
