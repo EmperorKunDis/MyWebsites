@@ -97,7 +97,7 @@
             <a id="aboutme" class="nav-link" href="#">About me</a>
           </li>
           <li class="nav-item">
-            <a id="projects" class="nav-link" href="#">Projects</a>
+            <a id="project" class="nav-link" href="#">Projects</a>
           </li>
           <li class="nav-item">
             <a id="contacts" class="nav-link" href="#">Contacts</a>
@@ -256,7 +256,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="#" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -376,6 +376,23 @@
     <!-- /END Footer Section -->
 
     <script defer type="module" src="index.js"></script>
-    <script src="./scripts/scripts.js"></script>   
+    <script>function toggleDropdown() {
+      var dropdown = document.getElementById("myDropdown");
+      dropdown.classList.toggle("show");
+    }
+  
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+</script>
   </body>
 </html>

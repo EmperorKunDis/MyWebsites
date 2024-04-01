@@ -10,7 +10,7 @@
         const home = document.querySelector("#home");
         const aboutme = document.querySelector("#aboutme");
         const contacts = document.querySelector("#contacts");
-        const projects = document.querySelector("#projects");
+        const project = document.querySelector("#project");
         buttonEnglish.onclick = languageUpdateEN;
         buttonGerman.onclick = languageUpdateDE;
         buttonCzech.onclick = languageUpdateCZ;
@@ -25,7 +25,7 @@
           home.innerText = "Home";
           aboutme.innerText = "About Me";
           contacts.innerText = "Contacts";
-          projects.innerText = "Projects";    
+          project.innerText = "Projects";    
         }
       function languageUpdateDE() {
         buttonLanguageMenu.innerText = "Sprache";
@@ -35,7 +35,7 @@
         home.innerText = "Startseite";
         aboutme.innerText = "Über mich";
         contacts.innerText = "Kontakte";
-        projects.innerText = "Projekte";
+        project.innerText = "Projekte";
       }
 
       function languageUpdateCZ() {
@@ -46,26 +46,8 @@
         home.innerText = "Domaci obrazovka";
         aboutme.innerText = "O mne";
         contacts.innerText = "Kontakty";
-        projects.innerText = "Projekty";
+        project.innerText = "Projekty";
       }
-        function toggleDropdown() {
-            var dropdown = document.getElementById("myDropdown");
-            dropdown.classList.toggle("show");
-          }
-
-          // Zavřít dropdown menu po kliknutí mimo něj
-          window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-              var dropdowns = document.getElementsByClassName("dropdown-content");
-              var i;
-              for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                  openDropdown.classList.remove('show');
-                }
-              }
-            }
-          }
 
             
     
