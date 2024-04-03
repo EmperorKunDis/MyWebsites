@@ -3,7 +3,7 @@
 ## A minimal portfolio template for Developers!
 
 <h2 align="center">
-  <img src="" alt="Simplefolio" width="600px" />
+  <img src="" alt="Emper(P)ortfolio" width="600px" />
   <br>
 </h2>
 
@@ -51,14 +51,14 @@ yarn@v1.22.10 or higher
 
 ## How To Use 🔧
 
-From your command line, first clone Simplefolio:
+From your command line, first clone Emperortfolio:
 
 ```bash
 # Clone the repository
-$ git clone https://github.com/cobiwave/simplefolio
+$ git clone https://github.com/EmperorKunDis/MyWebsites
 
 # Move into the repository
-$ cd simplefolio
+$ cd emperortfolio
 
 # Remove the current origin repository
 $ git remote remove origin
@@ -101,7 +101,7 @@ $ sudo npm install --unsafe-perm=true --allow-root
 Once your server has started, go to this url `http://localhost:1234/` to see the portfolio locally. It should look like the below screenshot.
 
 <h2 align="center">
-  <img src="https://github.com/cobiwave/gatsby-simplefolio/blob/master/examples/example.png" alt="Simplefolio" width="100%">
+  <img src="https://github.com/EmperorKunDis/MyWebsites" alt="Emper(P)ortfolio" width="100%">
 </h2>
 
 ---
