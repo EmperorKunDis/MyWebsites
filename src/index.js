@@ -4,7 +4,6 @@ import { targetElements, defaultProps } from "./data/scrollRevealConfig";
 import initScripts from "./scripts/scripts.js";
 import { carousel } from "./scripts/projectsImg.js";
 import { myFunction } from "./scripts/myFunction.js";
-import { toggleLanguage } from "./scripts/scripts.js";
 
 initScrollReveal(targetElements, defaultProps);
 initTiltEffect();

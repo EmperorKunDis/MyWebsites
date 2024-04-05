@@ -33,7 +33,7 @@ function toggleLanguage(language) {
     aboutme.innerText = "Über mich";
     contacts.innerText = "Kontakte";
     project.innerText = "Projekte";
-  } else if (language === "CZ") {
+  } else if (language === "CS") {
     buttonLanguageMenu.innerText = "Jazyk";
     buttonEnglish.innerText = "Anglický";
     buttonGerman.innerText = "Nemecký";
