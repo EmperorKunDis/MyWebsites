@@ -13,7 +13,7 @@
   For business & inquires, contact me -> jacobojavier98@gmail.com
 -->
 <!DOCTYPE html>
-<html lang="en" class="sr">
+<html class="sr">
   <head>
     <meta charset="utf-8" />
     <meta    http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,11 +79,11 @@
       </button>
       
       <div class="dropdown">
-        <button id="buttonLanguageMenu" onclick="toggleDropdown()" class="dropbtn">>Gustav</button>
+        <button id="buttonLanguageMenu" onclick="toggleDropdown()" class="dropbtn">Language</button>
         <div id="myDropdown" class="dropdown-content">
-          <button id="buttonEnglish" onclick="toggleLanguage('EN')">Lofas</button>
-          <button id="buttonGerman" onclick="toggleLanguage('DE')">Gustab</button>
-          <button id="buttonCzech" onclick="toggleLanguage('CZ')">Jonatan</button>
+          <button id="buttonEnglish" onclick="changeLanguage('eng')">English</button>
+          <button id="buttonGerman" onclick="changeLanguage('de')">Germany</button>
+          <button id="buttonCzech" onclick="changeLanguage('cz')">Czech</button>
         </div>
       </div>
       
@@ -136,8 +136,8 @@
     <!-- **** Hero Section **** -->
     <section id="hero">
       <div class="container">
-        <h1 class="hero-title load-hidden">
-          Hello there, <span class="text-small-main">I'm NOT General Kenoby</span>
+        <h1 id="welcome" class="hero-title load-hidden">
+          Hello there, <span id="welcomejoke" class="text-small-main">I'm NOT General Kenoby</span>
           <br />
           My name is <a rel="noreferrer" href="#about" class="hero-title load-hidden">Martin KunDis Svanda</a>
         </h1>
@@ -333,7 +333,7 @@
           </sup>
           </p>
           <div class="container">
-          <a
+          <a id="calltoaction"
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
@@ -365,11 +365,11 @@
           </a>
         </div>
         <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-        <p class="footer__text">
+        <p id="devby" class="footer__text">
           © 2024 - Website developed by 
           <a rel="noreferrer" href="https://github.com/EmperorKunDis" target="_blank"
-            >Martin EmperorKunDis Svanda</a>
-          <br>Based on work of <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank">Jacobo Martínez</a>
+            >Martin EmperorKunDis Švanda</a>
+          <br id="basedon">Based on work of <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank">Jacobo Martínez</a>
         </p>
       </div>
     </footer>
@@ -394,5 +394,95 @@
       }
     }
 </script>
+<script>
+  function changeLanguage(lang) {
+  location.hash = lang;
+  location.reload();
+}
+
+// Define the language reload anchors
+let language = {
+  eng: {
+    buttonLanguageMenu: "Language",
+    buttonEnglish: "English",
+    buttonGerman: "German",
+    buttonCzech: "Czech",
+    home: "Home",
+    aboutme: "About Me",
+    contacts: "Contacts",
+    project: "Projects",
+    devby: "© 2024 - Website developed by" + "Martin EmperorKunDis Švanda",
+    calltoaction: "Call to Action",
+    basedon: "Based on work of",
+    welcome: "Hello there My name is",
+    welcomejoke: "I'm NOT General Kenoby",
+  },
+  de: {
+    buttonLanguageMenu: "Sprache",
+    buttonEnglish: "Englisch",
+    buttonCzech: "Tschechisch",
+    buttonGerman: "Deutsch",
+    home: "Startseite",
+    aboutme: "Über mich",
+    contacts: "Kontakte",
+    project: "Projekte",
+    devby: "© 2024 - Website entwickelt von " + "Martin EmperorKunDis Švanda",
+    calltoaction: "Aufruf zum Handeln",
+    basedon: "Basierend auf der Arbeit von",
+    welcome: "Hello there Meine name ist",
+    welcomejoke: "Ich bin kein allgemeiner Kenobi",
+  },
+  cz: {
+    buttonLanguageMenu: "Jazyk",
+    buttonEnglish: "Anglický",
+    buttonGerman: "Nemecký",
+    buttonCzech: "Český",
+    home: "Domaci obrazovka",
+    aboutme: "O mne",
+    contacts: "Kontakty",
+    project: "Projekty",
+    devby: "© 2024 - Website vyvinuta " + "Martinem EmperorKunDis Švandou",
+    calltoaction: "Zavolat do akce",
+    basedon: "Zakladem byla prace : ",
+    welcome: "Hello there Jmenuju se ",
+    welcomejoke: "Ja nejsem General Kenoby",
+  },
+};
+
+// Check if a hash value exists in the URL
+if (window.location.hash) {
+  if (window.location.hash == "#de") {
+    buttonLanguageMenu.textContent = language.de.buttonLanguageMenu;
+    buttonEnglish.textContent = language.de.buttonEnglish;
+    buttonCzech.textContent = language.de.buttonCzech;
+    buttonGerman.textContent = language.de.buttonGerman;
+    home.textContent = language.de.home;
+    aboutme.textContent = language.de.aboutme;
+    contacts.textContent = language.de.contacts;
+    project.textContent = language.de.project;
+    devby.textContent = language.de.devby;
+    calltoaction.textContent = language.de.calltoaction;
+    basedon.textContent = language.de.basedon;
+    welcome.textContent = language.de.welcome;
+    welcomejoke.textContent = language.de.welcomejoke;
+
+  } else if (window.location.hash == "#cz") {
+    buttonLanguageMenu.textContent = language.cz.buttonLanguageMenu;
+    buttonEnglish.textContent = language.cz.buttonEnglish;
+    buttonGerman.textContent = language.cz.buttonGerman;
+    buttonCzech.textContent = language.cz.buttonCzech;
+    home.textContent = language.cz.home;
+    aboutme.textContent = language.cz.aboutme;
+    contacts.textContent = language.cz.contacts;
+    project.textContent = language.cz.contacts;
+    devby.textContent = language.cz.devby;
+    calltoaction.textContent = language.cz.calltoaction;
+    basedon.textContent = language.cz.basedon;
+    welcome.textContent = language.cz.welcome;
+    welcomejoke.textContent = language.cz.welcomejoke; 
+  }
+}
+
+  </script>
   </body>
 </html>
