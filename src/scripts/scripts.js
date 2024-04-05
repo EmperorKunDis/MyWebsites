@@ -5,30 +5,13 @@ const buttonEnglish = document.querySelector("#buttonEnglish");
 const buttonGerman = document.querySelector("#buttonGerman");
 const buttonCzech = document.querySelector("#buttonCzech");
 const languageMenuText = document.querySelector("#languageMenuText");
+const languageEnglishText = document.querySelector("#languageEnglishText");
 const languageGermanText = document.querySelector("#languageGermanText");
 const languageCzechText = document.querySelector("#languagCzechText");
 const home = document.querySelector("#home");
 const aboutme = document.querySelector("#aboutme");
 const contacts = document.querySelector("#contacts");
 const project = document.querySelector("#project");
-
-var language = "EN";
-
-buttonEnglish.onclick = language = "EN";
-buttonGerman.onclick = language = "DE";
-buttonCzech.onclick = language = "CZ";
-
-switch (language) {
-  case "EN":
-    languageUpdateEN();
-    break;
-  case "DE":
-    languageUpdateDE();
-    break;
-  case "CZ":
-    languageUpdateCZ();
-    break;
-}
 
 function languageUpdateEN() {
   buttonLanguageMenu.innerText = "Language";
@@ -50,7 +33,6 @@ function languageUpdateDE() {
   contacts.innerText = "Kontakte";
   project.innerText = "Projekte";
 }
-
 function languageUpdateCZ() {
   buttonLanguageMenu.innerText = "Jazyk";
   buttonEnglish.innerText = "Anglický";
